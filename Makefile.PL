@@ -18,6 +18,8 @@ WriteMakefile(
   },
   TEST_REQUIRES => {
     'Alien::Saxon' => '0',
+    'File::Spec::Functions' => '0',
+    'File::Temp' => '0',
     'Test::More' => '0.88',
     'Inline::Java' => 0,
     'XML::LibXML' => '1.60',

@@ -28,6 +28,9 @@ sub new
 	
 	if ($baseurl)
 	{
+		if ($baseurl !~ m/\/$/ms) {
+			$baseurl .= '/';
+		}
 		return bless { 'transformer' => XML::Saxon::XSLT3::Transformer->new($xslt, $baseurl) }, $class;
 	}
 	else
