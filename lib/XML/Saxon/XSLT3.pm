@@ -435,7 +435,7 @@ public class Transformer
 		throws SaxonApiException
 	{
 		ItemTypeFactory itf = new ItemTypeFactory(proc);
-		ItemType dateTimeType = itf.getAtomicType(new QName("http://www.w3.org/2001/XMLSchema", "datetime"));
+		ItemType dateTimeType = itf.getAtomicType(new QName("http://www.w3.org/2001/XMLSchema", "dateTime"));
 		params.put(key, new XdmAtomicValue(value, dateTimeType));
 	}
 
